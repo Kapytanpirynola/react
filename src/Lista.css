@@ -1,0 +1,62 @@
+.lista-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .lista-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .lista-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .lista-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .lista-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .lista-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .lista-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .lista-edit-button,
+  .lista-delete-button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .lista-edit-button:hover,
+  .lista-delete-button:hover {
+    background-color: #f0f0f0;
+  }
+  
