@@ -1,5 +1,3 @@
-/* App.css */
-
 .container {
   max-width: 800px;
   margin: auto;
@@ -8,6 +6,11 @@
 
 .title {
   text-align: center;
+}
+
+
+.App {
+  background-color: #505151;
 }
 
 /* Agrega estilos para otros elementos según sea necesario */

@@ -7,6 +7,8 @@ import Navbar from './navbar';
 import './navbar.css';
 import './footer.css';
 import './App.css'; 
+import './GenreFilter.css'; 
+import './SearchBar.css';
 
 
 // Define moviesData
@@ -35,12 +37,24 @@ function App() {
 
   return (
     <div>
-       <Navbar />
+      <SearchBar/>
+      <div>
+      <Navbar/>
+      </div>
+      <GenreFilter/>
+      <div>
+      </div>
+    <br/>
       <h1 className='title'>Movie List</h1>
-      <Footer  />
+      <div>
+      <MovieList movies={filteredMovies} />
+
+      </div>
+      <Footer/>
     </div>
   );
 }
 
 export default App;
+
 

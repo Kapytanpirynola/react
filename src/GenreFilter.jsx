@@ -1,5 +1,5 @@
-// GenreFilter.js
 import React from 'react';
+
 
 function GenreFilter({ selectedGenre, setSelectedGenre }) {
   const handleChange = (event) => {
@@ -7,7 +7,7 @@ function GenreFilter({ selectedGenre, setSelectedGenre }) {
   };
 
   return (
-    <div>
+    <div className="genre-filter">
       <select value={selectedGenre} onChange={handleChange}>
         <option value="">All Genres</option>
         <option value="Action">Action</option>

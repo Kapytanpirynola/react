@@ -8,10 +8,11 @@ const Footer = () => {
           <div className="col-md-6">
           </div>
           <div className="col-md-6">
-            <h4>Contacto</h4>
+            <h4>CONTACTO</h4>
             <p>Dirección: 123 1/2 Calle Principal, Mexico, Washinton</p>
             <p>Email: correo@gmail.com</p>
             <p>Teléfono: 614-123-45-67</p>
+            
           </div>
         </div>
       </div>
