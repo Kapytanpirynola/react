@@ -44,7 +44,6 @@ function App() {
       <GenreFilter/>
       <div>
       </div>
-    <br/>
       <h1 className='title'>Movie List</h1>
       <div>
       <MovieList movies={filteredMovies} />
