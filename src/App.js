@@ -4,9 +4,11 @@ import YouTube from 'react-youtube';
 // COMPONENTES
 import Footer from './footer';
 import navCar from './navCar';
+import Price from './price';
 
 //ESTILO DE APP CON CSS PARA EL REPRODUCTOR DEL TRAILER
 import'./App.css';
+import './price.css'
 
 function App() {
   const API_URL = 'https://api.themoviedb.org/3';
@@ -142,7 +144,6 @@ function App() {
           ) : null}
         </main>
       </div>
-
       {/*contenedor de los posters de las peliculas*/}
       <div className='container mt-3'>
         <div className='row'>
@@ -153,6 +154,7 @@ function App() {
             </div>
           ))}
         </div>
+        <Price />
       </div>
       <Footer/>
     </div>
