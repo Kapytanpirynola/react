@@ -3,8 +3,8 @@ import axios from 'axios';
 import YouTube from 'react-youtube';
 // COMPONENTES
 import Footer from './footer';
-import navCar from './navCar';
 import Price from './price';
+import Navbar from './Navbar'; 
 
 //ESTILO DE APP CON CSS PARA EL REPRODUCTOR DEL TRAILER
 import'./App.css';
@@ -79,12 +79,14 @@ function App() {
 
   return (
     <div className="bg-dark text-white">
+      <Navbar />
       <h2 className='text-center mt-5 mb-4'>Trailer Movies</h2>
       {/* BUCADOR */}
-      <form className='container mb-4' onSubmit={searchMovies}>
-        <input type="text" placeholder='Search' className="form-control" onChange={(e) => setSearchKey(e.target.value)} />
-        <button className='btn btn-primary mt-2'>Search</button>
+      <form className='container mb-4 d-flex' onSubmit={searchMovies}>
+         <input type="text" placeholder='Search' className="form-control mr-2" onChange={(e) => setSearchKey(e.target.value)} /> 
+         <button className='btn btn-secondary'>Search</button>
       </form>
+
       {/*aqui va el contenedor de todo el banner y del reproductor de video*/}
             {/* esto es por prueba */}
             <div>

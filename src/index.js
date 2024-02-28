@@ -1,6 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
 
@@ -9,6 +10,17 @@ root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
+);
+
+ReactDOM.render(
+  <BrowserRouter>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/" component={Home} />
+    <Route exact path="/" component={Home} />
+    <Route path="/about" component={About} />
+  </BrowserRouter>,
+  document.getElementById('root')
 );
 
 
