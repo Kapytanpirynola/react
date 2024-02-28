@@ -80,7 +80,7 @@ function App() {
   return (
     <div className="bg-dark text-white">
       <Navbar />
-      <h2 className='text-center mt-5 mb-4'>Trailer Movies</h2>
+      <h2 className='text-center mt-2 mb-1'>Trailer Movies</h2>
       {/* BUCADOR */}
       <form className='container mb-4 d-flex' onSubmit={searchMovies}>
          <input type="text" placeholder='Search' className="form-control mr-2" onChange={(e) => setSearchKey(e.target.value)} /> 

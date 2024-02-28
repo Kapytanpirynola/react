@@ -12,15 +12,11 @@ root.render(
   </React.StrictMode>
 );
 
-ReactDOM.render(
+ ReactDOM.render(
   <BrowserRouter>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/" component={Home} />
-    <Route exact path="/" component={Home} />
     <Route exact path="/" component={Home} />
     <Route path="/about" component={About} />
   </BrowserRouter>,
   document.getElementById('root')
-);
-
+); 
 
