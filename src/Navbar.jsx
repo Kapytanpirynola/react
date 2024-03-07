@@ -1,26 +1,49 @@
+// Importa los componentes necesarios
 import React from 'react';
+import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
+import About from './About';
+import App from './App';
+import FM from './FM';
 
+// Define tu componente Navbar
 function Navbar() {
   return (
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav className="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/App">Home</Link>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/About">About AMSOFTWARELAB</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/FM">More Info Film Hub</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 }
 
-export default Navbar;
+
+function AppWithRouter() {
+  return (
+    <Router>
+      <div className="bg-dark text-white">
+        <Navbar />
+        <Routes>
+          <Route path="/About" element={<About />} />
+          <Route exact path="/App" element={<App />} />
+          <Route path="/FM" element={<FM />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+
+export default AppWithRouter;
