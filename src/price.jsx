@@ -1,49 +1,192 @@
 import React from "react";
 
 function Pricing() {
-    return(  
-        <div class="background">
-        <div class="container">
-            <div class="panel pricing-table">
-            
-            <div class="pricing-plan">
-                {/* <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img"/> */}
-                <h2 class="pricing-header">FREE TRAIL</h2>
-                <ul class="pricing-features">
-                <li class="pricing-features-item">ACCESS TO THE COMPLETE LIBRARY OF MOVIES AND TV SHOWS.</li>
-                <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
-                </ul>
-                <span class="pricing-price">Free</span>
-                <a href="#/" class="pricing-button">Sign up</a>
+    return(
+        <div class="container p-0">
+    <hr/>
+    <h1 class="h3 mb-3 text-center">Plans &amp; Pricing</h1>
+
+    <div class="row">
+        <div class="col-md-10 col-xl-8 mx-auto">
+            <h1 class="text-center">We've Got a Plan for Every Movie Buff</h1>
+            <p class="lead text-center mb-4">Choose your perfect plan.</p>
+
+            <div class="row justify-content-center mt-3 mb-2">
+                <div class="col-auto">
+                </div>
             </div>
-            
-            <div class="pricing-plan">
-               {/*  <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img"/> */}
-                <h2 class="pricing-header">1 MONTH</h2>
-                <ul class="pricing-features">
-                <li class="pricing-features-item">TRANSMISSION IN HD OR ULTRA HD QUALITY.</li>
-                <li class="pricing-features-item">Multiple workers for more powerful apps</li>
-                </ul>
-                <span class="pricing-price">$120</span>
-                <a href="#/" class="pricing-button is-featured">BUY NOW</a>
+
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="monthly">
+                    <div class="row py-4">
+                        <div class="col-sm-4 mb-3 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <h5>Free</h5>
+                                        <span class="display-4">$0</span>
+                                    </div>
+                                    <h6>Includes:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            Basic access
+                                        </li>
+                                        <li class="mb-2">
+                                            5 trailers per month
+                                        </li>
+                                        <li class="mb-2">
+                                            Standard quality
+                                        </li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-lg btn-outline-primary">Sign up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-3 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <h5>Standard</h5>
+                                        <span class="display-4">$19</span>
+                                        <span>/mo</span>
+                                    </div>
+                                    <h6>Includes:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            Full access
+                                        </li>
+                                        <li class="mb-2">
+                                            Unlimited trailers
+                                        </li>
+                                        <li class="mb-2">
+                                            HD quality
+                                        </li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-lg btn-primary">Try it for free</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-3 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <h5>Premium</h5>
+                                        <span class="display-4">$39</span>
+                                        <span>/mo</span>
+                                    </div>
+                                    <h6>Includes:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            Exclusive access
+                                        </li>
+                                        <li class="mb-2">
+                                            Unlimited trailers
+                                        </li>
+                                        <li class="mb-2">
+                                            4K quality
+                                        </li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-lg btn-outline-primary">Try it for free</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="annual">
+                    <div class="row py-4">
+                        <div class="col-sm-4 mb-3 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <h5>Free</h5>
+                                        <span class="display-4">$0</span>
+                                    </div>
+                                    <h6>Includes:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            Basic access
+                                        </li>
+                                        <li class="mb-2">
+                                            5 trailers per month
+                                        </li>
+                                        <li class="mb-2">
+                                            Standard quality
+                                        </li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-lg btn-outline-primary">Sign up</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-3 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <h5>Standard</h5>
+                                        <span class="display-4">$199</span>
+                                        <span class="text-small4">/year</span>
+                                    </div>
+                                    <h6>Includes:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            Full access
+                                        </li>
+                                        <li class="mb-2">
+                                            Unlimited trailers
+                                        </li>
+                                        <li class="mb-2">
+                                            HD quality
+                                        </li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-lg btn-primary">Try it for free</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 mb-3 mb-md-0">
+                            <div class="card text-center h-100">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-4">
+                                        <h5>Premium</h5>
+                                        <span class="display-4">$399</span>
+                                        <span>/year</span>
+                                    </div>
+                                    <h6>Includes:</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2">
+                                            Exclusive access
+                                        </li>
+                                        <li class="mb-2">
+                                            Unlimited trailers
+                                        </li>
+                                        <li class="mb-2">
+                                            4K quality
+                                        </li>
+                                    </ul>
+                                    <div class="mt-auto">
+                                        <a href="#" class="btn btn-lg btn-outline-primary">Try it for free</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="pricing-plan">
-                {/* <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img"/> */}
-                <h2 class="pricing-header">6 MONTH</h2>
-                <ul class="pricing-features">
-                <li class="pricing-features-item">TRANSMISSION IN HD OR ULTRA HD QUALITY.</li>
-                <li class="pricing-features-item">OFFLINE DOWNLOADS TO VIEW OFFLINE CONTENT.</li>
-                <li class="pricing-features-item">NO ADVERTISING IN THE CONTENT.</li>
-                <li class="pricing-features-item">MORE THAN 3 DEVICES.</li>
-                </ul>
-                <span class="pricing-price">$450</span>
-                <a href="#/" class="pricing-button">BUY NOW</a>
-            </div>
-            
-            </div>
+
+            <hr/>
         </div>
     </div>
+
+</div>
+
     );
 }
 export default Pricing;

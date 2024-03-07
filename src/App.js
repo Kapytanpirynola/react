@@ -5,6 +5,7 @@ import YouTube from 'react-youtube';
 import Footer from './footer';
 import Price from './price';
 import Navbar from './Navbar'; 
+import Img from './img';
 
 //ESTILO DE APP CON CSS PARA EL REPRODUCTOR DEL TRAILER
 import'./App.css';
@@ -79,6 +80,8 @@ function App() {
 
   return (
     <div className="bg-dark text-white">
+      <Img/>
+      
       <Navbar />
       <h2 className='text-center mt-2 mb-1'>Trailer Movies</h2>
       {/* BUCADOR */}
@@ -88,7 +91,6 @@ function App() {
       </form>
 
       {/*aqui va el contenedor de todo el banner y del reproductor de video*/}
-            {/* esto es por prueba */}
             <div>
         <main>
           {movie ? (
