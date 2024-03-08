@@ -37,7 +37,7 @@ function AppWithRouter() {
         <Navbar />
         <Routes>
           <Route path="/About" element={<About />} />
-          <Route exact path="/App" element={<App />} />
+          <Route path="/App" element={<App />} />
           <Route path="/FM" element={<FM />} />
         </Routes>
       </div>
