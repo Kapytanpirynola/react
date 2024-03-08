@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
 import About from './About';
 import App from './App';
 import FM from './FM';
+import Footer from './footer';
 
 // Define tu componente Navbar
 function Navbar() {
@@ -28,7 +29,6 @@ function Navbar() {
     </nav>
   );
 }
-
 
 function AppWithRouter() {
   return (
