@@ -12,10 +12,10 @@ import'./App.css';
 import './price.css'
 
 function App() {
-  const API_URL = 'https://api.themoviedb.org/3';
-  const API_KEY = 'b586aeeb6751dae9b4be864b17537cc0';
-  const IMAGE_PATH = 'https://image.tmdb.org/t/p/original';
-  const URL_IMAGE = 'https://image.tmdb.org/t/p/original';
+  const API_URL = 'https://api.themoviedb.org/3'; // Es la direccion de la api que se esta utilizando
+  const API_KEY = 'b586aeeb6751dae9b4be864b17537cc0'; // es la key para poder usar la api, lo cual para usarla hay que crear cuenta
+  const IMAGE_PATH = 'https://image.tmdb.org/t/p/original'; // Es la direccion para poder tener acceso a los posters de las peliculas
+  const URL_IMAGE = 'https://image.tmdb.org/t/p/original'; // la direccion url de los posters
 
   // variables de estado 
   const [movies, setMovies] = useState([]);
